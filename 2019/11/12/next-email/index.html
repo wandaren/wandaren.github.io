@@ -51,30 +51,35 @@
   };
 </script>
 
-  <meta name="description" content="生活最佳状态是风风火火地冷冷清清">
-<meta property="og:type" content="website">
-<meta property="og:title" content="万大人的随笔">
-<meta property="og:url" content="http:&#x2F;&#x2F;wandaren.coding.me&#x2F;index.html">
+  <meta name="description" content="按照教程设置后会出现这种效果我们期待的是这种结果过程就不多说了，直接上解决办法，打开themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;sidebar&#x2F;site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容12345678910111213141516171819&amp;#123;%- for name, link in theme.s">
+<meta name="keywords" content="hexo,next">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 使用next主题设置社交邮箱的坑">
+<meta property="og:url" content="http:&#x2F;&#x2F;wandaren.coding.me&#x2F;2019&#x2F;11&#x2F;12&#x2F;next-email&#x2F;index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="生活最佳状态是风风火火地冷冷清清">
+<meta property="og:description" content="按照教程设置后会出现这种效果我们期待的是这种结果过程就不多说了，直接上解决办法，打开themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;sidebar&#x2F;site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容12345678910111213141516171819&amp;#123;%- for name, link in theme.s">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;wandaren.coding.me&#x2F;2019&#x2F;11&#x2F;12&#x2F;next-email&#x2F;1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;wandaren.coding.me&#x2F;2019&#x2F;11&#x2F;12&#x2F;next-email&#x2F;2.png">
+<meta property="og:updated_time" content="2019-11-12T16:34:23.780Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;wandaren.coding.me&#x2F;2019&#x2F;11&#x2F;12&#x2F;next-email&#x2F;1.png">
 
-<link rel="canonical" href="http://wandaren.coding.me/">
+<link rel="canonical" href="http://wandaren.coding.me/2019/11/12/next-email/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>万大人的随笔</title>
+  <title>hexo 使用next主题设置社交邮箱的坑 | 万大人的随笔</title>
   
 
 
@@ -186,10 +191,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://wandaren.coding.me/2019/11/12/next-email/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -203,8 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/12/next-email/" class="post-title-link" itemprop="url">hexo 使用next主题设置社交邮箱的坑</a>
+          hexo 使用next主题设置社交邮箱的坑
         </h1>
 
         <div class="post-meta">
@@ -224,7 +228,14 @@
                 <time title="修改时间：2019-11-13 00:34:23" itemprop="dateModified" datetime="2019-11-13T00:34:23+08:00">2019-11-13</time>
               </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -249,104 +260,78 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="按照教程设置后会出现这种效果"><a href="#按照教程设置后会出现这种效果" class="headerlink" title="按照教程设置后会出现这种效果"></a>按照教程设置后会出现这种效果</h3><p><img src="/2019/11/12/next-email/1.png" alt></p><h3 id="我们期待的是这种结果"><a href="#我们期待的是这种结果" class="headerlink" title="我们期待的是这种结果"></a>我们期待的是这种结果</h3><p><img src="/2019/11/12/next-email/2.png" alt></p><h3 id="过程就不多说了，直接上解决办法，打开themes-next-layout-partials-sidebar-site-overview-swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容"><a href="#过程就不多说了，直接上解决办法，打开themes-next-layout-partials-sidebar-site-overview-swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容" class="headerlink" title="过程就不多说了，直接上解决办法，打开themes/next/layout/_partials/sidebar/site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容"></a>过程就不多说了，直接上解决办法，打开themes/next/layout/_partials/sidebar/site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- for name, link in theme.social %&#125;</span><br><span class="line">   &lt;span class=&quot;links-of-author-item&quot;&gt;</span><br><span class="line">   &#123;%- set sidebarURL = link.split(&apos;||&apos;)[0] | trim %&#125;</span><br><span class="line">   &#123;%- if theme.social_icons.enable %&#125;</span><br><span class="line">     &#123;%- set sidebarIcon = &apos;&lt;i class=&quot;fa fa-fw fa-&apos; + link.split(&apos;||&apos;)[1] | trim + &apos;&quot;&gt;&lt;/i&gt;&apos; %&#125;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">     &#123;%- set sidebarIcon = &apos;&apos; %&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">   &#123;%- if theme.social_icons.enable and theme.social_icons.icons_only %&#125;</span><br><span class="line">     &#123;%- set sidebarText = &apos;&apos; %&#125;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">     &#123;%- set sidebarText = name %&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">   &#123;%- if name == &apos;E-Mail&apos; %&#125;</span><br><span class="line">   &lt;a href=&quot;&#123;&#123; sidebarURL &#125;&#125;&quot; rel=&quot;alternate&quot; title=&quot;E-Mail&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt; E-Mail&lt;/a&gt;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">   &#123;&#123; next_url(sidebarURL, sidebarIcon + sidebarText, &#123;title: name + &apos; → &apos; + sidebarURL&#125;) &#125;&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">  &lt;/span&gt;</span><br></pre></td></tr></table></figure>
-      
+        <h3 id="按照教程设置后会出现这种效果"><a href="#按照教程设置后会出现这种效果" class="headerlink" title="按照教程设置后会出现这种效果"></a>按照教程设置后会出现这种效果</h3><p><img src="/2019/11/12/next-email/1.png" alt></p><h3 id="我们期待的是这种结果"><a href="#我们期待的是这种结果" class="headerlink" title="我们期待的是这种结果"></a>我们期待的是这种结果</h3><p><img src="/2019/11/12/next-email/2.png" alt></p><h3 id="过程就不多说了，直接上解决办法，打开themes-next-layout-partials-sidebar-site-overview-swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容"><a href="#过程就不多说了，直接上解决办法，打开themes-next-layout-partials-sidebar-site-overview-swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容" class="headerlink" title="过程就不多说了，直接上解决办法，打开themes/next/layout/_partials/sidebar/site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容"></a>过程就不多说了，直接上解决办法，打开themes/next/layout/_partials/sidebar/site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- for name, link in theme.social %&#125;</span><br><span class="line">   &lt;span class=&quot;links-of-author-item&quot;&gt;</span><br><span class="line">   &#123;%- set sidebarURL = link.split(&apos;||&apos;)[0] | trim %&#125;</span><br><span class="line">   &#123;%- if theme.social_icons.enable %&#125;</span><br><span class="line">     &#123;%- set sidebarIcon = &apos;&lt;i class=&quot;fa fa-fw fa-&apos; + link.split(&apos;||&apos;)[1] | trim + &apos;&quot;&gt;&lt;/i&gt;&apos; %&#125;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">     &#123;%- set sidebarIcon = &apos;&apos; %&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">   &#123;%- if theme.social_icons.enable and theme.social_icons.icons_only %&#125;</span><br><span class="line">     &#123;%- set sidebarText = &apos;&apos; %&#125;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">     &#123;%- set sidebarText = name %&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">   &#123;%- if name == &apos;E-Mail&apos; %&#125;</span><br><span class="line">   &lt;a href=&quot;&#123;&#123; sidebarURL &#125;&#125;&quot; rel=&quot;alternate&quot; title=&quot;E-Mail&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt; &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt; E-Mail&lt;/a&gt;</span><br><span class="line">   &#123;%- else %&#125;</span><br><span class="line">   &#123;&#123; next_url(sidebarURL, sidebarIcon + sidebarText, &#123;title: name + &apos; → &apos; + sidebarURL&#125;) &#125;&#125;</span><br><span class="line">   &#123;%- endif %&#125;</span><br><span class="line">  &lt;/span&gt;</span><br></pre></td></tr></table></figure>
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        <div class="reward-container">
+  <div>如果你喜欢这篇文章，可以请万万喝一瓶肥宅快乐水 ～</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="wandaren 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="wandaren 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wandaren.coding.me/2019/11/12/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/77.jpg">
-      <meta itemprop="name" content="wandaren">
-      <meta itemprop="description" content="生活最佳状态是风风火火地冷冷清清">
-    </span>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>wandaren
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://wandaren.coding.me/2019/11/12/next-email/" title="hexo 使用next主题设置社交邮箱的坑">http://wandaren.coding.me/2019/11/12/next-email/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="万大人的随笔">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/12/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag">fa fa-google hexo</a>
+              <a href="/tags/next/" rel="tag">fa fa-google next</a>
+          </div>
 
-              <time title="创建时间：2019-11-12 18:23:54" itemprop="dateCreated datePublished" datetime="2019-11-12T18:23:54+08:00">2019-11-12</time>
-            </span>
+        
 
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/11/12/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/12/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -375,6 +360,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#按照教程设置后会出现这种效果"><span class="nav-number">1.</span> <span class="nav-text">按照教程设置后会出现这种效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我们期待的是这种结果"><span class="nav-number">2.</span> <span class="nav-text">我们期待的是这种结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程就不多说了，直接上解决办法，打开themes-next-layout-partials-sidebar-site-overview-swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容"><span class="nav-number">3.</span> <span class="nav-text">过程就不多说了，直接上解决办法，打开themes/next/layout/_partials/sidebar/site-overview.swig这个文件查找inks-of-author-item，然后把这一块替换成下面的内容</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
