@@ -2,7 +2,7 @@
 <feed xmlns="https://www.w3.org/2005/Atom">
   <title>万大人的随笔</title>
   
-  
+  <subtitle>不是所有可以计算的东西都是重要的,也不是所有重要的东西都能被计算。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenxiao.我爱你/"/>
