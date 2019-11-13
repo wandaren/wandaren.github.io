@@ -5,9 +5,9 @@
   <subtitle>不是所有可以计算的东西都是重要的,也不是所有重要的东西都能被计算。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://chenxiao.我爱你/"/>
+  <link href="https://wandaren.coding.me/"/>
   <updated>2019-11-12T17:03:39.609Z</updated>
-  <id>https://chenxiao.我爱你/</id>
+  <id>https://wandaren.coding.me/</id>
   
   <author>
     <name>wandaren</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo 使用next主题设置社交邮箱的坑</title>
-    <link href="https://chenxiao.我爱你/2019/11/12/next-email/"/>
-    <id>https://chenxiao.我爱你/2019/11/12/next-email/</id>
+    <link href="https://wandaren.coding.me/2019/11/12/next-email/"/>
+    <id>https://wandaren.coding.me/2019/11/12/next-email/</id>
     <published>2019-11-12T15:57:26.000Z</published>
     <updated>2019-11-12T17:03:39.609Z</updated>
     
@@ -33,9 +33,9 @@
     
     
     
-      <category term="hexo" scheme="https://chenxiao.我爱你/tags/hexo/"/>
+      <category term="hexo" scheme="https://wandaren.coding.me/tags/hexo/"/>
     
-      <category term="next" scheme="https://chenxiao.我爱你/tags/next/"/>
+      <category term="next" scheme="https://wandaren.coding.me/tags/next/"/>
     
   </entry>
   
