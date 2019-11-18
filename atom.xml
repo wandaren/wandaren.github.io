@@ -5,9 +5,9 @@
   <subtitle>不是所有可以计算的东西都是重要的,也不是所有重要的东西都能被计算。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://wandaren.coding.me/"/>
+  <link href="https://chenxiao.我爱你/"/>
   <updated>2019-11-14T13:49:44.569Z</updated>
-  <id>https://wandaren.coding.me/</id>
+  <id>https://chenxiao.我爱你/</id>
   
   <author>
     <name>wandaren</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>github高级搜索</title>
-    <link href="https://wandaren.coding.me/2019/11/14/github/"/>
-    <id>https://wandaren.coding.me/2019/11/14/github/</id>
+    <link href="https://chenxiao.我爱你/2019/11/14/github/"/>
+    <id>https://chenxiao.我爱你/2019/11/14/github/</id>
     <published>2019-11-14T13:17:50.000Z</published>
     <updated>2019-11-14T13:49:44.569Z</updated>
     
@@ -32,15 +32,15 @@
     </summary>
     
     
-      <category term="github" scheme="https://wandaren.coding.me/categories/github/"/>
+      <category term="github" scheme="https://chenxiao.我爱你/categories/github/"/>
     
     
   </entry>
   
   <entry>
     <title>hexo同时deploy到多个云端的正确姿势</title>
-    <link href="https://wandaren.coding.me/2019/11/14/deploys/"/>
-    <id>https://wandaren.coding.me/2019/11/14/deploys/</id>
+    <link href="https://chenxiao.我爱你/2019/11/14/deploys/"/>
+    <id>https://chenxiao.我爱你/2019/11/14/deploys/</id>
     <published>2019-11-14T01:39:27.000Z</published>
     <updated>2019-11-14T13:33:48.063Z</updated>
     
@@ -53,15 +53,15 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://wandaren.coding.me/categories/hexo/"/>
+      <category term="hexo" scheme="https://chenxiao.我爱你/categories/hexo/"/>
     
     
   </entry>
   
   <entry>
     <title>hexo 使用next主题设置社交邮箱的坑</title>
-    <link href="https://wandaren.coding.me/2019/11/12/next-email/"/>
-    <id>https://wandaren.coding.me/2019/11/12/next-email/</id>
+    <link href="https://chenxiao.我爱你/2019/11/12/next-email/"/>
+    <id>https://chenxiao.我爱你/2019/11/12/next-email/</id>
     <published>2019-11-12T15:57:26.000Z</published>
     <updated>2019-11-14T13:32:21.891Z</updated>
     
@@ -74,10 +74,10 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://wandaren.coding.me/categories/hexo/"/>
+      <category term="hexo" scheme="https://chenxiao.我爱你/categories/hexo/"/>
     
     
-      <category term="next" scheme="https://wandaren.coding.me/tags/next/"/>
+      <category term="next" scheme="https://chenxiao.我爱你/tags/next/"/>
     
   </entry>
   
