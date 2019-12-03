@@ -305,7 +305,7 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h3 id="hexo使用yilia-plus-yilia-主题时点击所有文章、有链、关于我等弹出空白网页解决办法"><a href="#hexo使用yilia-plus-yilia-主题时点击所有文章、有链、关于我等弹出空白网页解决办法" class="headerlink" title="hexo使用yilia-plus(yilia)主题时点击所有文章、有链、关于我等弹出空白网页解决办法"></a>hexo使用yilia-plus(yilia)主题时点击所有文章、有链、关于我等弹出空白网页解决办法</h3><ul>
-<li>修改themes/yilia/layout/_partial/left-col.ejs文件内容找到header-smart-menu属性<br>‘’‘java<br><a q-on="click: openSlider(e, '<%-i%>')">&lt;%= theme.smart_menu[i] %&gt;</a><br>‘’’</li></ul>
+<li>修改themes/yilia/layout/_partial/left-col.ejs文件内容找到header-smart-menu属性<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a q-on=&quot;click: openSlider(e, &apos;&lt;%-i%&gt;&apos;)&quot; &gt;&lt;%= theme.smart_menu[i] %&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure></li></ul>
     
     <a class="article-more-a" href="/2019/12/03/yilia/#more">more >></a>
     
@@ -769,11 +769,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">next</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">next</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
