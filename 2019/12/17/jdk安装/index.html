@@ -22,7 +22,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;jdk%E5%AE%89%E8%A3%85&#x2F;jdk2.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;jdk%E5%AE%89%E8%A3%85&#x2F;jdk3.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;jdk%E5%AE%89%E8%A3%85&#x2F;jdk4.jpg">
-<meta property="og:updated_time" content="2019-12-17T03:51:25.949Z">
+<meta property="og:updated_time" content="2019-12-17T03:56:19.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;jdk%E5%AE%89%E8%A3%85&#x2F;jdk.jpg">
   
@@ -277,7 +277,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">407字</span>
+      <span class="post-count">413字</span>
     </span>
   </span>
 
@@ -310,9 +310,10 @@
 <h4 id="安装指定大版本和子版本（1-8-0-222-b03-1-el7）"><a href="#安装指定大版本和子版本（1-8-0-222-b03-1-el7）" class="headerlink" title="安装指定大版本和子版本（1.8.0.222.b03-1.el7）"></a>安装指定大版本和子版本（1.8.0.222.b03-1.el7）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install java-1.8.0-openjdk-1.8.0.222.b03-1.el7.x86_64</span><br></pre></td></tr></table></figure>
 <h4 id="查看安装版本（验证是否安装成功）"><a href="#查看安装版本（验证是否安装成功）" class="headerlink" title="查看安装版本（验证是否安装成功）"></a>查看安装版本（验证是否安装成功）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
 <p><img src="/2019/12/17/jdk%E5%AE%89%E8%A3%85/jdk4.jpg" alt></p>
-<h4 id="设置JAVA-HOME"><a href="#设置JAVA-HOME" class="headerlink" title="设置JAVA_HOME"></a>设置JAVA_HOME</h4><ul>
+<h4 id="设置JAVA-HOME"><a href="#设置JAVA-HOME" class="headerlink" title="设置JAVA_HOME"></a>设置JAVA_HOME</h4><h4 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h4><ul>
 <li>yum 安装java的默认目录是/usr/lib/jvm/java<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo export JAVA_HOME=/usr/lib/jvm/java/ &gt;&gt; ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
-<h4 id="定位JDK的安装路径"><a href="#定位JDK的安装路径" class="headerlink" title="定位JDK的安装路径"></a>定位JDK的安装路径</h4></li>
+<h4 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h4></li>
+<li>定位JDK的安装路径</li>
 <li>输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which java</span><br></pre></td></tr></table></figure></li>
 <li>输出<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/java</span><br></pre></td></tr></table></figure></li>
 <li>输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lr /usr/bin/java</span><br></pre></td></tr></table></figure></li>
@@ -654,6 +655,10 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">idea</a>
               </li>
              
@@ -662,15 +667,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">next</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">next</a>
               </li>
             
             <div class="clearfix"></div>
