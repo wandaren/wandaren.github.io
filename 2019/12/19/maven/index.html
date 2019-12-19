@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="万大人的随笔">
 <meta property="og:description" content="svn删除误提交的文件 例如删除image项目下的.recommenders1svn delete svn:&#x2F;&#x2F;127.0.0.1&#x2F;sourcecode&#x2F;trunk&#x2F;image&#x2F;.recommenders -m &amp;quot;delete test file&amp;quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-19T04:06:27.023Z">
+<meta property="og:updated_time" content="2019-12-19T04:08:07.453Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
@@ -297,7 +297,7 @@
 <a id="more"></a>
 <h3 id="maven安装本地jar包依赖"><a href="#maven安装本地jar包依赖" class="headerlink" title="maven安装本地jar包依赖"></a>maven安装本地jar包依赖</h3></li>
 <li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install:install-file -DgroupId=com.github.nintha -DartifactId=webp-imageio-core -Dversion=0.1.3 -Dpackaging=jar -Dfile=/Users/wandaren/develop/repository/com/github/webp-imageio-core-0.1.3.jar</span><br></pre></td></tr></table></figure></li>
-<li>引用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">           &lt;groupId&gt;com.github.nintha&lt;/groupId&gt;</span><br><span class="line">           &lt;artifactId&gt;webp-imageio-core&lt;/artifactId&gt;</span><br><span class="line">           &lt;version&gt;0.1.3&lt;/version&gt;</span><br><span class="line">       &lt;/dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>引用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">          &lt;groupId&gt;com.github.nintha&lt;/groupId&gt;</span><br><span class="line">          &lt;artifactId&gt;webp-imageio-core&lt;/artifactId&gt;</span><br><span class="line">          &lt;version&gt;0.1.3&lt;/version&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br></pre></td></tr></table></figure></li>
 <li>卸载本地依赖<br>在某个引用的工程目录下，和pom文件同级目录下，执行以下命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:purge-local-repository -DmanualInclude=&quot;com.github.nintha:webp-imageio-core&quot;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -627,15 +627,15 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">idea</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">maven</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
