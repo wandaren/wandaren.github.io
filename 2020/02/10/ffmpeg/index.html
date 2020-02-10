@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="万大人的随笔">
 <meta property="og:description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi  3.  转换视频文件到音频文件1ffmpeg -i input.mp4 -v">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-10T09:07:01.176Z">
+<meta property="og:updated_time" content="2020-02-10T09:29:46.948Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
@@ -290,7 +290,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">910字</span>
+      <span class="post-count">755字</span>
     </span>
   </span>
 
@@ -361,32 +361,6 @@
 <li><p>-f – 表示输出格式，即，在我们的实例中是图像。image-%2d.png – 表明我们如何想命名提取的图像。在这个实例中，命名应该像这样image-01.png、image-02.png、image-03.png 等等开始。如果你使用 %3d，那么图像的命名像 image-001.png、image-002.png 等等开始。</p>
 </li>
 </ul>
-<h6 id="6-裁剪视频"><a href="#6-裁剪视频" class="headerlink" title="6. 裁剪视频"></a>6. 裁剪视频</h6><ul>
-<li>* 剪切视频将影响质量</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -filter:v &quot;crop=w:h:x:y&quot; output.mp4</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>input.mp4 – 源视频文件。</p>
-</li>
-<li><p>-filter:v – 表示视频过滤器。</p>
-</li>
-<li><p>crop – 表示裁剪过滤器。</p>
-</li>
-<li><p>w – 我们想自源视频中裁剪的矩形的宽度。</p>
-</li>
-<li><p>h – 矩形的高度。</p>
-</li>
-<li><p>x – 我们想自源视频中裁剪的矩形的 x 坐标 。</p>
-</li>
-<li><p>y – 矩形的 y 坐标。</p>
-</li>
-</ul>
-<ul>
-<li>比如说你想要一个来自视频的位置 (200,150)，且具有 640 像素宽度和 480 像素高度的视频，命令应该是：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -filter:v &quot;crop=640:480:200:150&quot; output.mp4</span><br></pre></td></tr></table></figure>
-
 <h6 id="7-设置视频的屏幕高宽比"><a href="#7-设置视频的屏幕高宽比" class="headerlink" title="7. 设置视频的屏幕高宽比"></a>7. 设置视频的屏幕高宽比</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -aspect 16:9 output.mp4</span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -772,7 +746,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">maven</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -780,7 +754,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">maven</a>
               </li>
              
               <li class="article-tag-list-item">
