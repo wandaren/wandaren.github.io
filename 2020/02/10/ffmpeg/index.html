@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wandaren.gitee.io">
-  <title>Archives: 2020 | 万大人的随笔</title>
+  <title>ffmpeg常用命令 | 万大人的随笔</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="生活最佳状态是风风火火地冷冷清清">
-<meta property="og:type" content="website">
-<meta property="og:title" content="万大人的随笔">
-<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;archives&#x2F;2020&#x2F;index.html">
+  <meta name="description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi  3.  转换视频文件到音频文件1ffmpeg -i input.mp4 -v">
+<meta name="keywords" content="ffmpeg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ffmpeg常用命令">
+<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;02&#x2F;10&#x2F;ffmpeg&#x2F;index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="生活最佳状态是风风火火地冷冷清清">
+<meta property="og:description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi  3.  转换视频文件到音频文件1ffmpeg -i input.mp4 -v">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-02-10T09:07:01.176Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
@@ -260,41 +262,247 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ffmpeg" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/02/10/ffmpeg/" class="archive-article-date">
-        <time datetime="2020-02-10T08:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/02/10/ffmpeg/" target="_blank">ffmpeg常用命令</a>
   
+    <h1 class="article-title" itemprop="name">
+      ffmpeg常用命令
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+<a href="/2020/02/10/ffmpeg/" class="archive-article-date">
+        <time datetime="2020-02-10T08:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">910字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h6 id="1-获取音频-视频文件信息"><a href="#1-获取音频-视频文件信息" class="headerlink" title="1.  获取音频/视频文件信息"></a>1.  获取音频/视频文件信息</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4</span><br></pre></td></tr></table></figure>
+<h6 id="2-转换视频文件到不同的格式"><a href="#2-转换视频文件到不同的格式" class="headerlink" title="2.  转换视频文件到不同的格式"></a>2.  转换视频文件到不同的格式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 video.avi</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 -qscale 0 video.avi</span><br></pre></td></tr></table></figure>
+
+<h6 id="3-转换视频文件到音频文件"><a href="#3-转换视频文件到音频文件" class="headerlink" title="3.  转换视频文件到音频文件"></a>3.  转换视频文件到音频文件</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn output.mp3</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -ab 320 -f mp3 output.mp3</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>-vn – 表明我们已经在输出文件中禁用视频录制。</p>
+</li>
+<li><p>-ar – 设置输出文件的音频频率。通常使用的值是22050 Hz、44100 Hz、48000 Hz。</p>
+</li>
+<li><p>-ac – 设置音频通道的数目。</p>
+</li>
+<li><p>-ab – 表明音频比特率。</p>
+</li>
+<li><p>-f – 输出文件格式。在我们的实例中，它是 mp3 格式。</p>
+<a id="more"></a>
+
+</li>
+</ul>
+<h6 id="4-更改视频文件的分辨率"><a href="#4-更改视频文件的分辨率" class="headerlink" title="4.  更改视频文件的分辨率"></a>4.  更改视频文件的分辨率</h6><ul>
+<li>如果你想设置一个视频文件为指定的分辨率(如1240x720)，你可以使用下面的命令：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -filter:v scale=1240:720 -c:a copy output.mp4</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -s 1240x720 -c:a copy output.mp4</span><br></pre></td></tr></table></figure>
+
+<h6 id="5-移除视-音频流"><a href="#5-移除视-音频流" class="headerlink" title="5.  移除视/音频流"></a>5.  移除视/音频流</h6><ul>
+<li>移除音频流 （使用 -an 标志）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -an output.mp4</span><br></pre></td></tr></table></figure>
+<p>在这里，-an 表示没有音频录制。</p>
+<ul>
+<li>移除视频流 (使用 -vn 标志)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn output.mp3</span><br></pre></td></tr></table></figure>
+
+<h6 id="6-从视频中提取图像"><a href="#6-从视频中提取图像" class="headerlink" title="6.  从视频中提取图像"></a>6.  从视频中提取图像</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -r 1 -f image2 image-%2d.png</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>-r – 设置帧速度。即，每秒提取帧到图像的数字。默认值是 25。</p>
+</li>
+<li><p>-f – 表示输出格式，即，在我们的实例中是图像。image-%2d.png – 表明我们如何想命名提取的图像。在这个实例中，命名应该像这样image-01.png、image-02.png、image-03.png 等等开始。如果你使用 %3d，那么图像的命名像 image-001.png、image-002.png 等等开始。</p>
+</li>
+</ul>
+<h6 id="6-裁剪视频"><a href="#6-裁剪视频" class="headerlink" title="6. 裁剪视频"></a>6. 裁剪视频</h6><ul>
+<li>* 剪切视频将影响质量</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -filter:v &quot;crop=w:h:x:y&quot; output.mp4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>input.mp4 – 源视频文件。</p>
+</li>
+<li><p>-filter:v – 表示视频过滤器。</p>
+</li>
+<li><p>crop – 表示裁剪过滤器。</p>
+</li>
+<li><p>w – 我们想自源视频中裁剪的矩形的宽度。</p>
+</li>
+<li><p>h – 矩形的高度。</p>
+</li>
+<li><p>x – 我们想自源视频中裁剪的矩形的 x 坐标 。</p>
+</li>
+<li><p>y – 矩形的 y 坐标。</p>
+</li>
+</ul>
+<ul>
+<li>比如说你想要一个来自视频的位置 (200,150)，且具有 640 像素宽度和 480 像素高度的视频，命令应该是：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -filter:v &quot;crop=640:480:200:150&quot; output.mp4</span><br></pre></td></tr></table></figure>
+
+<h6 id="7-设置视频的屏幕高宽比"><a href="#7-设置视频的屏幕高宽比" class="headerlink" title="7. 设置视频的屏幕高宽比"></a>7. 设置视频的屏幕高宽比</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -aspect 16:9 output.mp4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>通常使用的高宽比是：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">16:9</span><br><span class="line">4:3</span><br><span class="line">16:10</span><br><span class="line">5:4</span><br><span class="line">2:21:1</span><br><span class="line">2:35:1</span><br><span class="line">2:39:1</span><br></pre></td></tr></table></figure>
+<h6 id="8-使用开始和停止时间剪下一段媒体文件"><a href="#8-使用开始和停止时间剪下一段媒体文件" class="headerlink" title="8. 使用开始和停止时间剪下一段媒体文件"></a>8. 使用开始和停止时间剪下一段媒体文件</h6><ul>
+<li>视频</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -ss 00:00:50 -codec copy -t 50 output.mp4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>音频</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i audio.mp3 -ss 00:01:54 -to 00:06:53 -c copy output.mp3</span><br></pre></td></tr></table></figure>
+
+<h6 id="9-增加-减少视频播放速度"><a href="#9-增加-减少视频播放速度" class="headerlink" title="9. 增加/减少视频播放速度"></a>9. 增加/减少视频播放速度</h6><ul>
+<li>增加视频播放速度</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vf &quot;setpts=0.5*PTS&quot; output.mp4</span><br></pre></td></tr></table></figure>
+<p>该命令将双倍(1/2)视频的速度。</p>
+<ul>
+<li>降低视频播放速度(你需要使用一个大于1的倍数)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vf &quot;setpts=4.0*PTS&quot; output.mp4</span><br></pre></td></tr></table></figure>
+
+<h5 id="常用参数说明："><a href="#常用参数说明：" class="headerlink" title="常用参数说明："></a>常用参数说明：</h5><ol>
+<li><h6 id="主要参数："><a href="#主要参数：" class="headerlink" title="主要参数："></a>主要参数：</h6></li>
+</ol>
+<ul>
+<li>-i 设定输入流</li>
+<li>-f 设定输出格式</li>
+<li>-ss 开始时间</li>
+</ul>
+<ol start="2">
+<li><h6 id="视频参数："><a href="#视频参数：" class="headerlink" title="视频参数："></a>视频参数：</h6></li>
+</ol>
+<ul>
+<li>-b 设定视频流量，默认为200Kbit/s</li>
+<li>-r 设定帧速率，默认为25</li>
+<li>-s 设定画面的宽与高</li>
+<li>-aspect 设定画面的比例</li>
+<li>-vn 不处理视频</li>
+<li>-vcodec 设定视频编解码器，未设定时则使用与输入流相同的编解码器</li>
+</ul>
+<ol start="3">
+<li><h6 id="音频参数："><a href="#音频参数：" class="headerlink" title="音频参数："></a>音频参数：</h6></li>
+</ol>
+<ul>
+<li>-ar 设定采样率</li>
+<li>-ac 设定声音的Channel数</li>
+<li>-acodec 设定声音编解码器，未设定时则使用与输入流相同的编解码器</li>
+<li>-an 不处理音频</li>
+</ul>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>请万万一瓶肥宅快乐水～<i class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/wechatpay.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          wandaren
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://wandaren.gitee.io/2020/02/10/ffmpeg/" title="ffmpeg常用命令" target="_blank">https://wandaren.gitee.io/2020/02/10/ffmpeg/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://opensource.org/licenses/MIT" rel="external nofollow noopener noreferrer" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -306,159 +514,131 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://wandaren.gitee.io/2020/02/10/ffmpeg/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/02/08/linux/" class="archive-article-date">
-        <time datetime="2020-02-08T00:51:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-08</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/08/linux/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux相关操作与命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/02/08/linux/" target="_blank">linux相关操作与命令</a>
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
   
-    </h1>
-  
+  <script>
+  <!-- id: "ffmpeg常用命令" -->
+  var giteement = new Giteement({
+    id: '20200210160649',
+    owner: 'wandaren',
+    repo: 'hexo-comments',
+    backcall_uri: 'https://wandaren.gitee.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '744d14660565b57ea74e572475861e173ff2d8ac4fdd21e28dafdb9875b86cf3',
+      client_secret: '1c7625e694879f96fa17cfc3394756a27aa7faca940fddd2d77fc7ad9433390e'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/14/sublime/" class="archive-article-date">
-        <time datetime="2020-01-14T07:09:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/14/sublime/" target="_blank">sublime text3格式化json</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">sublime</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/03/vim/" class="archive-article-date">
-        <time datetime="2020-01-03T06:28:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-03</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/03/vim/" target="_blank">vim快捷键</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">vim</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -488,8 +668,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
