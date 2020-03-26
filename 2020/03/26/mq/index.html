@@ -6,22 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wandaren.gitee.io">
-  <title>hexo同时deploy到多个云端的正确姿势 | 万大人的随笔</title>
+  <title>Linux下载安装RabbitMQ3.8.3 | 万大人的随笔</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="hexo版本4.0.0百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式">
-<meta name="keywords" content="hexo">
+  <meta name="description" content="1.1 查看系统版本号  1cat &#x2F;etc&#x2F;centos-release">
+<meta name="keywords" content="mq">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo同时deploy到多个云端的正确姿势">
-<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;11&#x2F;14&#x2F;deploys&#x2F;index.html">
+<meta property="og:title" content="Linux下载安装RabbitMQ3.8.3">
+<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="hexo版本4.0.0百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式">
+<meta property="og:description" content="1.1 查看系统版本号  1cat &#x2F;etc&#x2F;centos-release">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;11&#x2F;14&#x2F;deploys&#x2F;1.png">
-<meta property="og:updated_time" content="2019-12-03T12:38:30.000Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;1.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;2.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;3.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;4.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;5.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;6.png">
+<meta property="og:updated_time" content="2020-03-26T08:21:59.015Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2019&#x2F;11&#x2F;14&#x2F;deploys&#x2F;1.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;03&#x2F;26&#x2F;mq&#x2F;1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
   
@@ -264,22 +269,22 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-deploys" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-mq" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      hexo同时deploy到多个云端的正确姿势
+      Linux下载安装RabbitMQ3.8.3
     </h1>
   
 
 
   
   
-<a href="/2019/11/14/deploys/" class="archive-article-date">
-        <time datetime="2019-11-14T01:39:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+<a href="/2020/03/26/mq/" class="archive-article-date">
+        <time datetime="2020-03-26T07:09:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-26</time>
 </a>
 
   
@@ -292,7 +297,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">99字</span>
+      <span class="post-count">497字</span>
     </span>
   </span>
 
@@ -301,7 +306,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -312,9 +317,79 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="hexo版本4-0-0"><a href="#hexo版本4-0-0" class="headerlink" title="hexo版本4.0.0"></a>hexo版本4.0.0</h2><h3 id="百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下-修改hexo根目录下的-config-yml文件的deploy格式"><a href="#百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下-修改hexo根目录下的-config-yml文件的deploy格式" class="headerlink" title="百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式"></a>百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式</h3><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- type: git</span><br><span class="line">   repo: git@github.com:wandaren/wandaren.github.io.git</span><br><span class="line">   branch: master</span><br><span class="line"> - type: git</span><br><span class="line">   repo: git@git.dev.tencent.com:wandaren/wandaren.coding.me.git</span><br><span class="line">   branch: masteri</span><br></pre></td></tr></table></figure>
-<h3 id="更多配置deploy相关的信息可以查看hexo官方文档"><a href="#更多配置deploy相关的信息可以查看hexo官方文档" class="headerlink" title="更多配置deploy相关的信息可以查看hexo官方文档"></a>更多配置deploy相关的信息可以查看<a href="https://hexo.io/docs/one-command-deployment" target="_blank" rel="external nofollow noopener noreferrer" title="hexo官方文档">hexo官方文档</a></h3><p><img src="/2019/11/14/deploys/1.png" alt></p>
+    <ul>
+<li>1.1 查看系统版本号</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/centos-release</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/26/mq/1.jpg" alt></p>
+<a id="more"></a>
+
+<ul>
+<li>1.2 Erlang安装需要对应各自的版本<br><a href="https://www.rabbitmq.com/which-erlang.html" target="_blank" rel="external nofollow noopener noreferrer">具体版本要求请点击查看</a></li>
+</ul>
+<p><img src="/2020/03/26/mq/2.jpg" alt></p>
+<ul>
+<li>1.3 Erlang安装,我们安装的是3.8.3,对应的Erlang版本最低需要21.3最高22.X</li>
+<li>1.4 目录准备</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src/</span><br><span class="line">mkdir rabbitmq</span><br><span class="line">cd rabbitmq</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1.5 添加仓库地址,为了减少安装的错误,我们使用仓库安装,类似于maven</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/yum.repos.d/rabbitmq-erlang.repo</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>因为我的系统是CentOS 7所以填写如下内容<br><a href="https://github.com/rabbitmq/erlang-rpm" target="_blank" rel="external nofollow noopener noreferrer">不同版本请点击查看</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># In /etc/yum.repos.d/rabbitmq_erlang.repo</span><br><span class="line">[rabbitmq_erlang]</span><br><span class="line">name=rabbitmq_erlang</span><br><span class="line">baseurl=https://packagecloud.io/rabbitmq/erlang/el/7/$basearch</span><br><span class="line">repo_gpgcheck=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">enabled=1</span><br><span class="line"># PackageCloud&apos;s repository key and RabbitMQ package signing key</span><br><span class="line">gpgkey=https://packagecloud.io/rabbitmq/erlang/gpgkey</span><br><span class="line">       https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc</span><br><span class="line">sslverify=1</span><br><span class="line">sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span><br><span class="line">metadata_expire=300</span><br><span class="line"></span><br><span class="line">[rabbitmq_erlang-source]</span><br><span class="line">name=rabbitmq_erlang-source</span><br><span class="line">baseurl=https://packagecloud.io/rabbitmq/erlang/el/7/SRPMS</span><br><span class="line">repo_gpgcheck=1</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line"># PackageCloud&apos;s repository key and RabbitMQ package signing key</span><br><span class="line">gpgkey=https://packagecloud.io/rabbitmq/erlang/gpgkey</span><br><span class="line">       https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc</span><br><span class="line">sslverify=1</span><br><span class="line">sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span><br><span class="line">metadata_expire=300</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>1.6 安装erlang</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install erlang -y</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>2.1 安装RabbitMQ<br><a href="https://www.rabbitmq.com/install-rpm.html" target="_blank" rel="external nofollow noopener noreferrer">参考文档</a><br><a href="https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.3/rabbitmq-server-3.8.3-1.el7.noarch.rpm" target="_blank" rel="external nofollow noopener noreferrer">3.8.3的下载地址</a></p>
+<ul>
+<li>下载对应版本的rpm文件<br><img src="/2020/03/26/mq/3.png" alt></li>
+</ul>
+</li>
+<li><p>2.2 上传到远程服务的rabbitmq目录下</p>
+</li>
+<li><p>2.3 配置仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/yum.repos.d/mq.repo</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> #CentOS 7</span><br><span class="line">[bintray-rabbitmq-server]</span><br><span class="line">name=bintray-rabbitmq-rpm</span><br><span class="line">baseurl=https://dl.bintray.com/rabbitmq/rpm/rabbitmq-server/v3.8.x/el/7/</span><br><span class="line">gpgcheck=0</span><br><span class="line">repo_gpgcheck=0</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/26/mq/4.jpg" alt></p>
+</li>
+<li><p>2.4 开始安装</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm --import https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc</span><br><span class="line">yum install rabbitmq-server-3.8.3-1.el7.noarch.rpm -y</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/26/mq/5.jpg" alt></p>
+<ul>
+<li><p>到此mq安装完成</p>
+</li>
+<li><p>2.5 设置开机启动</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig rabbitmq-server on</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>2.6 开启web界面管理工具,并启动mq</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rabbitmq-plugins enable rabbitmq_management</span><br><span class="line">service rabbitmq-server restart</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>2.7 添加用户并开放远程</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl add_user mq 123456</span><br><span class="line">rabbitmqctl set_user_tags username administrator</span><br><span class="line">rabbitmqctl set_permissions -p / username &apos;.*&apos; &apos;.*&apos; &apos;.*&apos;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>2.8 使用的是安全组没有使用防火墙，如果服务器有开启防火墙,需要开放对应的远程端口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=15672/tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.7 web界面<br><img src="/2020/03/26/mq/6.png" alt></p>
+</li>
+</ul>
 
     
 
@@ -360,7 +435,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://wandaren.gitee.io/2019/11/14/deploys/" title="hexo同时deploy到多个云端的正确姿势" target="_blank">https://wandaren.gitee.io/2019/11/14/deploys/</a>
+          <a href="https://wandaren.gitee.io/2020/03/26/mq/" title="Linux下载安装RabbitMQ3.8.3" target="_blank">https://wandaren.gitee.io/2020/03/26/mq/</a>
         </li>
         
         <li>
@@ -382,24 +457,13 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">mq</a>
         		</li>
       		
 		</ul>
 	</div>
 
     
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
     
 
@@ -449,7 +513,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://wandaren.gitee.io/2019/11/14/deploys/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://wandaren.gitee.io/2020/03/26/mq/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -464,18 +528,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2019/11/25/index/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/26/mac/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          常用工具
+          Mac创建文件夹报Read-only file system
         
       </div>
     </a>
   
   
-    <a href="/2019/11/12/next-email/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo 使用next主题设置社交邮箱的坑</div>
+    <a href="/2020/02/20/git-relevant/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git相关操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -513,9 +577,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "hexo同时deploy到多个云端的正确姿势" -->
+  <!-- id: "Linux下载安装RabbitMQ3.8.3" -->
   var giteement = new Giteement({
-    id: '20191114093927',
+    id: '20200326150953',
     owner: 'wandaren',
     repo: 'hexo-comments',
     backcall_uri: 'https://wandaren.gitee.io',
