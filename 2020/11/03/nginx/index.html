@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wandaren.gitee.io">
-  <title>文章分类 | 万大人的随笔</title>
+  <title>nginx配置阿里云免费版ssl证书 | 万大人的随笔</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="生活最佳状态是风风火火地冷冷清清">
-<meta property="og:type" content="website">
-<meta property="og:title" content="文章分类">
-<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;categories&#x2F;index.html">
+  <meta name="description" content="查看 nginx 安装目录1which nginx 查看配置文件 nginx.conf 路径1nginx -t">
+<meta name="keywords" content="nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx配置阿里云免费版ssl证书">
+<meta property="og:url" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;11&#x2F;03&#x2F;nginx&#x2F;index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="生活最佳状态是风风火火地冷冷清清">
+<meta property="og:description" content="查看 nginx 安装目录1which nginx 查看配置文件 nginx.conf 路径1nginx -t">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-12T10:38:05.000Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;11&#x2F;03&#x2F;nginx&#x2F;20201003.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;11&#x2F;03&#x2F;nginx&#x2F;202010032.png">
+<meta property="og:updated_time" content="2020-11-03T06:46:39.504Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;wandaren.gitee.io&#x2F;2020&#x2F;11&#x2F;03&#x2F;nginx&#x2F;20201003.jpg">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
   
@@ -261,22 +265,22 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-nginx" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      文章分类
+      nginx配置阿里云免费版ssl证书
     </h1>
   
 
 
   
   
-<a href="/categories/index.html" class="archive-article-date">
-        <time datetime="2019-11-12T10:37:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-12</time>
+<a href="/2020/11/03/nginx/" class="archive-article-date">
+        <time datetime="2020-11-03T06:21:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-03</time>
 </a>
 
   
@@ -289,7 +293,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">0字</span>
+      <span class="post-count">125字</span>
     </span>
   </span>
 
@@ -309,7 +313,22 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    
+    <h4 id="查看-nginx-安装目录"><a href="#查看-nginx-安装目录" class="headerlink" title="查看 nginx 安装目录"></a>查看 nginx 安装目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which nginx</span><br></pre></td></tr></table></figure>
+<h4 id="查看配置文件-nginx-conf-路径"><a href="#查看配置文件-nginx-conf-路径" class="headerlink" title="查看配置文件 nginx.conf 路径"></a>查看配置文件 nginx.conf 路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -t</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h4 id="到阿里云购买免费ssl证书"><a href="#到阿里云购买免费ssl证书" class="headerlink" title="到阿里云购买免费ssl证书"></a>到阿里云购买免费ssl证书</h4><p><img src="/2020/11/03/nginx/20201003.jpg" alt></p>
+<h4 id="下载证书选择nginx"><a href="#下载证书选择nginx" class="headerlink" title="下载证书选择nginx"></a>下载证书选择nginx</h4><p><img src="/2020/11/03/nginx/202010032.png" alt></p>
+<h4 id="解压证书放到服务器指定目录如（-etc-nginx-cert）"><a href="#解压证书放到服务器指定目录如（-etc-nginx-cert）" class="headerlink" title="解压证书放到服务器指定目录如（/etc/nginx/cert）"></a>解压证书放到服务器指定目录如（/etc/nginx/cert）</h4><ul>
+<li>压缩包内含两个文件，分别为XXX.key和XXX.pem。上传到服务器指定目录</li>
+</ul>
+<h4 id="打开nginx-conf配置ssl-certificate-和ssl-certificate-key"><a href="#打开nginx-conf配置ssl-certificate-和ssl-certificate-key" class="headerlink" title="打开nginx.conf配置ssl_certificate 和ssl_certificate_key"></a>打开nginx.conf配置ssl_certificate 和ssl_certificate_key</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssl_certificate /etc/nginx/cert/XXX.pem;</span><br><span class="line">ssl_certificate_key /etc/nginx/cert/XXX.key;</span><br></pre></td></tr></table></figure>
+<h4 id="保存后重启nginx服务即可"><a href="#保存后重启nginx服务即可" class="headerlink" title="保存后重启nginx服务即可"></a>保存后重启nginx服务即可</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
+<ul>
+<li>/usr/sbin/nginx 为nginx安装目录</li>
+</ul>
+
     
 
     
@@ -354,7 +373,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://wandaren.gitee.io/categories/index.html" title="文章分类" target="_blank">https://wandaren.gitee.io/categories/index.html</a>
+          <a href="https://wandaren.gitee.io/2020/11/03/nginx/" title="nginx配置阿里云免费版ssl证书" target="_blank">https://wandaren.gitee.io/2020/11/03/nginx/</a>
         </li>
         
         <li>
@@ -371,6 +390,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">nginx</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -421,7 +451,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://wandaren.gitee.io/categories/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://wandaren.gitee.io/2020/11/03/nginx/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -433,6 +463,16 @@
   </div>
 </article>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/26/mac/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac创建文件夹报Read-only file system</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 <aside class="wrap-side-operation">
@@ -450,6 +490,40 @@
         
     </div>
 </aside>
+
+
+
+
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "nginx配置阿里云免费版ssl证书" -->
+  var giteement = new Giteement({
+    id: '20201103142120',
+    owner: 'wandaren',
+    repo: 'hexo-comments',
+    backcall_uri: 'https://wandaren.gitee.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '744d14660565b57ea74e572475861e173ff2d8ac4fdd21e28dafdb9875b86cf3',
+      client_secret: '1c7625e694879f96fa17cfc3394756a27aa7faca940fddd2d77fc7ad9433390e'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+
+
+
+
 
 
 
@@ -481,7 +555,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
