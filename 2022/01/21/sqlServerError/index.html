@@ -10,18 +10,18 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="jdk版本：jdk-1.8.0.312 异常信息   异常解决 定位jdk安装目录：  12ls -lrt &#x2F;etc&#x2F;alternatives&#x2F;java">
+  <meta name="description" content="jdk版本：jdk-1.8.0.312  异常信息   1The server selected protocol version TLS10 is not accepted by client preference[TLS12]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The server selected protocol version TLS10 is not accepted by client preference[TLS12] 连接sqlserver报错">
 <meta property="og:url" content="http://wandaren.github.io/2022/01/21/sqlServerError/index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="jdk版本：jdk-1.8.0.312 异常信息   异常解决 定位jdk安装目录：  12ls -lrt &#x2F;etc&#x2F;alternatives&#x2F;java">
+<meta property="og:description" content="jdk版本：jdk-1.8.0.312  异常信息   1The server selected protocol version TLS10 is not accepted by client preference[TLS12]">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://preview.cloud.189.cn/image/imageAction?param=AAB26D82BC4AC88FD7CF41C56E39C44DBA70982A1D37EC7A2C53ED4DBA28BE2A3C6D385D514B7036E7EAD1994075F0AA7448766396C56FCE9CCDD13E7C1EFBCC535306AF63B8D28F246B9AD32288B74325679730FD0F872962F784CD098FEBECE17BA1B0B39030B8E3E30DA06D1F2A78">
 <meta property="og:image" content="https://preview.cloud.189.cn/image/imageAction?param=A9B07B29A2182EEA050B1410A64F8ABA527648F0D9DD5569BAEEC1F8E09F71262A24DB6E2A424BB9170B43FA9E70141FAAEA832F3D3654D24E4CEB3173F8E28875D997D7E10699D5F2609F703499B2296DCFF731EF64529A5598F29CC82B07946C0A9957778014ABC4194230C0D07A20">
 <meta property="og:image" content="https://preview.cloud.189.cn/image/imageAction?param=7158E9A08278CB0A1DD181406ACB626B341A1FF3829C98E4CB7C1A83768F286BE9808DAB8F08EF8169009EB81202E7D0FCD14C0B656088CA71D400EF8CF7F31C0733628A118D2C39A45507DBDBCB18727D1064CF5C636706E00142BB4240BE64649B5F39BA6544195AC16719123D2548">
 <meta property="article:published_time" content="2022-01-21T09:56:52.000Z">
-<meta property="article:modified_time" content="2022-11-20T08:40:54.501Z">
+<meta property="article:modified_time" content="2022-11-20T08:53:36.966Z">
 <meta property="article:author" content="wandaren">
 <meta property="article:tag" content="SQLServerException">
 <meta name="twitter:card" content="summary">
@@ -281,7 +281,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">61字</span>
+      <span class="post-count">74字</span>
     </span>
   </span>
 
@@ -302,17 +302,21 @@
   <div class="article-entry" itemprop="articleBody">
     
     <ul>
-<li>jdk版本：jdk-1.8.0.312</li>
-<li>异常信息</li>
+<li><p>jdk版本：jdk-1.8.0.312</p>
+</li>
+<li><p>异常信息</p>
+</li>
 </ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The server selected protocol version TLS10 is not accepted by client preference[TLS12]</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
 <p><img src="https://preview.cloud.189.cn/image/imageAction?param=AAB26D82BC4AC88FD7CF41C56E39C44DBA70982A1D37EC7A2C53ED4DBA28BE2A3C6D385D514B7036E7EAD1994075F0AA7448766396C56FCE9CCDD13E7C1EFBCC535306AF63B8D28F246B9AD32288B74325679730FD0F872962F784CD098FEBECE17BA1B0B39030B8E3E30DA06D1F2A78"></p>
 <h3 id="异常解决"><a href="#异常解决" class="headerlink" title="异常解决"></a>异常解决</h3><ul>
 <li>定位jdk安装目录：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -lrt /etc/alternatives/java</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lrt /etc/alternatives/java</span><br></pre></td></tr></table></figure>
 <p><img src="https://preview.cloud.189.cn/image/imageAction?param=A9B07B29A2182EEA050B1410A64F8ABA527648F0D9DD5569BAEEC1F8E09F71262A24DB6E2A424BB9170B43FA9E70141FAAEA832F3D3654D24E4CEB3173F8E28875D997D7E10699D5F2609F703499B2296DCFF731EF64529A5598F29CC82B07946C0A9957778014ABC4194230C0D07A20"></p>
-<span id="more"></span>
-
 <ul>
 <li>jre\lib\security文件夹下（环境变量设置的jre）java.security文件jdk.tls.disabledAlgorithms 配置项将 3DES_EDE_CBC，TLSv1, TLSv1.1, 删除即可。</li>
 </ul>

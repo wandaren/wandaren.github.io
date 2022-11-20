@@ -368,15 +368,12 @@
   <div class="article-entry" itemprop="articleBody">
     
     <ul>
-<li>jdk版本：jdk-1.8.0.312</li>
-<li>异常信息</li>
+<li><p>jdk版本：jdk-1.8.0.312</p>
+</li>
+<li><p>异常信息</p>
+</li>
 </ul>
-<p><img src="https://preview.cloud.189.cn/image/imageAction?param=AAB26D82BC4AC88FD7CF41C56E39C44DBA70982A1D37EC7A2C53ED4DBA28BE2A3C6D385D514B7036E7EAD1994075F0AA7448766396C56FCE9CCDD13E7C1EFBCC535306AF63B8D28F246B9AD32288B74325679730FD0F872962F784CD098FEBECE17BA1B0B39030B8E3E30DA06D1F2A78"></p>
-<h3 id="异常解决"><a href="#异常解决" class="headerlink" title="异常解决"></a>异常解决</h3><ul>
-<li>定位jdk安装目录：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -lrt /etc/alternatives/java</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://preview.cloud.189.cn/image/imageAction?param=A9B07B29A2182EEA050B1410A64F8ABA527648F0D9DD5569BAEEC1F8E09F71262A24DB6E2A424BB9170B43FA9E70141FAAEA832F3D3654D24E4CEB3173F8E28875D997D7E10699D5F2609F703499B2296DCFF731EF64529A5598F29CC82B07946C0A9957778014ABC4194230C0D07A20"></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The server selected protocol version TLS10 is not accepted by client preference[TLS12]</span><br></pre></td></tr></table></figure>
     
     
 
@@ -914,21 +911,6 @@
 <li>如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 -qscale 0 video.avi</span><br></pre></td></tr></table></figure>
-
-<h6 id="3-转换视频文件到音频文件"><a href="#3-转换视频文件到音频文件" class="headerlink" title="3.  转换视频文件到音频文件"></a>3.  转换视频文件到音频文件</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn output.mp3</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -ab 320 -f mp3 output.mp3</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>-vn – 表明我们已经在输出文件中禁用视频录制。</p>
-</li>
-<li><p>-ar – 设置输出文件的音频频率。通常使用的值是22050 Hz、44100 Hz、48000 Hz。</p>
-</li>
-<li><p>-ac – 设置音频通道的数目。</p>
-</li>
-<li><p>-ab – 表明音频比特率。</p>
-</li>
-<li><p>-f – 输出文件格式。在我们的实例中，它是 mp3 格式。</p>
     
     
 

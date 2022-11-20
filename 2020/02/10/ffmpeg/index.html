@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi  3.  转换视频文件到音频文件1ffmpeg -i input.m">
+  <meta name="description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ffmpeg常用命令">
 <meta property="og:url" content="http://wandaren.github.io/2020/02/10/ffmpeg/index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi  3.  转换视频文件到音频文件1ffmpeg -i input.m">
+<meta property="og:description" content="1.  获取音频&#x2F;视频文件信息1ffmpeg -i video.mp4 2.  转换视频文件到不同的格式1ffmpeg -i video.mp4 video.avi   如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：  1ffmpeg -i video.mp4 -qscale 0 video.avi">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-10T08:06:49.000Z">
-<meta property="article:modified_time" content="2021-05-26T07:21:13.000Z">
+<meta property="article:modified_time" content="2022-11-20T08:54:08.989Z">
 <meta property="article:author" content="wandaren">
 <meta property="article:tag" content="ffmpeg">
 <meta name="twitter:card" content="summary">
@@ -305,6 +305,8 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 -qscale 0 video.avi</span><br></pre></td></tr></table></figure>
 
+<span id="more"></span>
+
 <h6 id="3-转换视频文件到音频文件"><a href="#3-转换视频文件到音频文件" class="headerlink" title="3.  转换视频文件到音频文件"></a>3.  转换视频文件到音频文件</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn output.mp3</span><br></pre></td></tr></table></figure>
 <p>或</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -ab 320 -f mp3 output.mp3</span><br></pre></td></tr></table></figure>
@@ -319,7 +321,7 @@
 <li><p>-ab – 表明音频比特率。</p>
 </li>
 <li><p>-f – 输出文件格式。在我们的实例中，它是 mp3 格式。</p>
-<span id="more"></span></li>
+</li>
 </ul>
 <h6 id="4-更改视频文件的分辨率"><a href="#4-更改视频文件的分辨率" class="headerlink" title="4.  更改视频文件的分辨率"></a>4.  更改视频文件的分辨率</h6><ul>
 <li>如果你想设置一个视频文件为指定的分辨率(如1240x720)，你可以使用下面的命令：</li>
@@ -377,10 +379,12 @@
 <li>mp4向左旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -metadata:s:v rotate=&quot;90&quot; -codec copy outut.mp4</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>mp4向右旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -metadata:s:v rotate=&quot;-90&quot; -codec copy outut.mp4</span><br></pre></td></tr></table></figure>
+
 
 <ul>
 <li>mp4左右镜像翻转</li>
@@ -391,34 +395,44 @@
 <li>mp4上下镜像翻转</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.mp4 -vf &quot;vflip&quot; outut.mp4</span><br></pre></td></tr></table></figure>
+
 <h6 id="11-图片左右-x2F-上下镜像和任意旋转"><a href="#11-图片左右-x2F-上下镜像和任意旋转" class="headerlink" title="11. 图片左右&#x2F;上下镜像和任意旋转"></a>11. 图片左右&#x2F;上下镜像和任意旋转</h6><ul>
 <li>图片向右旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf rotate=&#x27;90*PI/180&#x27; -y rotate60.png</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>图片向右旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf rotate=&#x27;-90*PI/180&#x27; -y rotate_90.png</span><br></pre></td></tr></table></figure>
+
+
 <ul>
 <li>图片像左旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf transpose=2 -y transpose2.png</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>图片像右旋转90度</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf transpose=1 -y transpose2.png</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>逆时针(向左)旋转90°，然后垂直（上下）翻转</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf transpose=0 -y transpose0.png</span><br></pre></td></tr></table></figure>
+
+
 <ul>
 <li>图片左右镜像翻转</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input.png -vf hflip -y hflip.png</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>图片上下镜像翻转</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ffmpeg -i input.png -vf vflip -y vflip.png</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>yuv数据左右镜像翻转</li>
 </ul>
@@ -428,6 +442,8 @@
 <li>播放左右翻转后的yuv数据</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ffplay -video_size 1920x1080 -pixel_format nv12 hflip_nv12.yuv</span><br></pre></td></tr></table></figure>
+
+
 <h6 id="12-音频音量调节大小"><a href="#12-音频音量调节大小" class="headerlink" title="12. 音频音量调节大小"></a>12. 音频音量调节大小</h6><ul>
 <li>音量翻倍，写在滤镜里</li>
 </ul>
