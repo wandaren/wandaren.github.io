@@ -259,7 +259,7 @@
 
 
   
-    <article id="post-deploys" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-git-relevant" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -267,7 +267,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2019/11/14/deploys/" target="_blank">hexo同时deploy到多个云端的正确姿势</a>
+	  <a class="article-title" href="/2020/02/20/git-relevant/" target="_blank">git相关操作</a>
   
     </h1>
   
@@ -275,8 +275,8 @@
 
   
   
-<a href="/2019/11/14/deploys/" class="archive-article-date">
-        <time datetime="2019-11-14T01:39:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+<a href="/2020/02/20/git-relevant/" class="archive-article-date">
+        <time datetime="2020-02-20T01:16:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-20</time>
 </a>
 
   
@@ -288,7 +288,10 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="hexo版本4-0-0"><a href="#hexo版本4-0-0" class="headerlink" title="hexo版本4.0.0"></a>hexo版本4.0.0</h2><h3 id="百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下-修改hexo根目录下的-config-yml文件的deploy格式"><a href="#百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下-修改hexo根目录下的-config-yml文件的deploy格式" class="headerlink" title="百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式"></a>百度了很多同时推送到多个远端的配置都不能用，写法有问题正确的姿势如下,修改hexo根目录下的_config.yml文件的deploy格式</h3>
+    <ol>
+<li>查看历史版本</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --pretty=oneline</span><br></pre></td></tr></table></figure>
     
     
 
@@ -305,7 +308,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -317,7 +320,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/java//" class="article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -326,7 +329,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2019/11/14/deploys/">展开全文 >></a>
+      <a class="article-more-a" href="/2020/02/20/git-relevant/">展开全文 >></a>
     </p>
     
 
@@ -356,7 +359,7 @@
 
 
   
-    <article id="post-next-email" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-ffmpeg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -364,7 +367,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2019/11/12/next-email/" target="_blank">hexo 使用next主题设置社交邮箱的坑</a>
+	  <a class="article-title" href="/2020/02/10/ffmpeg/" target="_blank">ffmpeg常用命令</a>
   
     </h1>
   
@@ -372,8 +375,8 @@
 
   
   
-<a href="/2019/11/12/next-email/" class="archive-article-date">
-        <time datetime="2019-11-12T15:57:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-12</time>
+<a href="/2020/02/10/ffmpeg/" class="archive-article-date">
+        <time datetime="2020-02-10T08:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
 </a>
 
   
@@ -385,7 +388,13 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="按照教程设置后会出现这种效果"><a href="#按照教程设置后会出现这种效果" class="headerlink" title="按照教程设置后会出现这种效果"></a>按照教程设置后会出现这种效果</h3><h4 id="hexo版本号：4-0-0"><a href="#hexo版本号：4-0-0" class="headerlink" title="hexo版本号：4.0.0"></a>hexo版本号：4.0.0</h4><h4 id="next版本号：7-5-0"><a href="#next版本号：7-5-0" class="headerlink" title="next版本号：7.5.0"></a>next版本号：7.5.0</h4>
+    <h6 id="1-获取音频-x2F-视频文件信息"><a href="#1-获取音频-x2F-视频文件信息" class="headerlink" title="1.  获取音频&#x2F;视频文件信息"></a>1.  获取音频&#x2F;视频文件信息</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4</span><br></pre></td></tr></table></figure>
+<h6 id="2-转换视频文件到不同的格式"><a href="#2-转换视频文件到不同的格式" class="headerlink" title="2.  转换视频文件到不同的格式"></a>2.  转换视频文件到不同的格式</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 video.avi</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果你想维持你的源视频文件的质量，使用 -qscale 0 参数：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i video.mp4 -qscale 0 video.avi</span><br></pre></td></tr></table></figure>
     
     
 
@@ -402,7 +411,760 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">next</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/02/10/ffmpeg/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-linux" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/02/08/linux/" target="_blank">linux相关操作与命令</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/02/08/linux/" class="archive-article-date">
+        <time datetime="2020-02-08T00:51:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-08</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h4 id="1-命令上传本地文件（脚本）到222-189-19-5-20018服务器上"><a href="#1-命令上传本地文件（脚本）到222-189-19-5-20018服务器上" class="headerlink" title="1. 命令上传本地文件（脚本）到222.189.19.5:20018服务器上"></a>1. 命令上传本地文件（脚本）到222.189.19.5:20018服务器上</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P 20018 /Users/wandaren/Documents/server_init_adsl.sh root@222.189.19.5:/root/server_init_adsl.sh</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/02/08/linux/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-sublime" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/01/14/sublime/" target="_blank">sublime text3格式化json</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/01/14/sublime/" class="archive-article-date">
+        <time datetime="2020-01-14T07:09:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-14</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <ul>
+<li>sublime text3安装pretty json</li>
+</ul>
+<ol>
+<li>cmd + shift +p</li>
+<li>install package</li>
+<li>pretty json</li>
+</ol>
+<ul>
+<li><p>格式化快捷键</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + cmd + j</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">sublime</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/14/sublime/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vim" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/01/03/vim/" target="_blank">vim快捷键</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/01/03/vim/" class="archive-article-date">
+        <time datetime="2020-01-03T06:28:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-03</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>​	<img src="https://preview.cloud.189.cn/image/imageAction?param=996C1EFC224D110EF646A37851D4CEB6BE2A7CB4414D28112FCF1494A32813BCFAA27A0A0BC2403F615411F84D03C1FD7AC7CDB938CEEB3BEFC9AE0A24E4B2665ABE454B287B55FE01A5ACE85BD293EF5E360032E932D9ACDC552378452F6BC426E2201EE8A99A40B4D9FC1B4822B1E8"></p>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/01/03/vim/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-maven" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/12/19/maven/" target="_blank">svn,maven相关命令</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/12/19/maven/" class="archive-article-date">
+        <time datetime="2019-12-19T03:56:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-19</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="svn删除误提交的文件"><a href="#svn删除误提交的文件" class="headerlink" title="svn删除误提交的文件"></a>svn删除误提交的文件</h3><ul>
+<li>例如删除image项目下的.recommenders<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn delete svn://127.0.0.1/sourcecode/trunk/image/.recommenders -m &quot;delete test file&quot;</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/java//" class="article-tag-list-link color5">java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/19/maven/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jdk安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/12/17/jdk%E5%AE%89%E8%A3%85/" target="_blank">centos7 yum 安装jdk</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/12/17/jdk%E5%AE%89%E8%A3%85/" class="archive-article-date">
+        <time datetime="2019-12-17T01:38:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h4 id="查询是否安装-jdk"><a href="#查询是否安装-jdk" class="headerlink" title="查询是否安装 jdk"></a>查询是否安装 jdk</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep jdk</span><br><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
+<h3 id="yum-查询支持的版本"><a href="#yum-查询支持的版本" class="headerlink" title="yum 查询支持的版本"></a>yum 查询支持的版本</h3><h4 id="可以先更新一下-yum-源，以便支持最新版本"><a href="#可以先更新一下-yum-源，以便支持最新版本" class="headerlink" title="可以先更新一下 yum 源，以便支持最新版本"></a>可以先更新一下 yum 源，以便支持最新版本</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y update</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jdk</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/java//" class="article-tag-list-link color5">java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/17/jdk%E5%AE%89%E8%A3%85/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-scaffolds" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/12/13/scaffolds/" target="_blank">Hexo文章Scaffolds脚手架</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/12/13/scaffolds/" class="archive-article-date">
+        <time datetime="2019-12-13T13:42:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="Hexo定制hexo-n创建的文件默认格式"><a href="#Hexo定制hexo-n创建的文件默认格式" class="headerlink" title="Hexo定制hexo n创建的文件默认格式"></a>Hexo定制hexo n创建的文件默认格式</h1><h3 id="每次写文章还要敲或者复制comments、category有点麻烦，最好执行hexo-new-“post-name”的时候就默认生成。"><a href="#每次写文章还要敲或者复制comments、category有点麻烦，最好执行hexo-new-“post-name”的时候就默认生成。" class="headerlink" title="每次写文章还要敲或者复制comments、category有点麻烦，最好执行hexo new “post name”的时候就默认生成。"></a>每次写文章还要敲或者复制comments、category有点麻烦，最好执行hexo new “post name”的时候就默认生成。</h3><ul>
+<li>这就需要用到Scaffolds脚手架了</li>
+<li>脚手架在scaffolds文件夹下，里面默认有post.md、draft.md、page.md三个，分别为博文、草稿和page的脚手架</li>
+</ul>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/13/scaffolds/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-idea" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/12/13/idea/" target="_blank">idea的一些使用技巧</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/12/13/idea/" class="archive-article-date">
+        <time datetime="2019-12-13T12:24:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="IntelliJ-IDEA-弹窗出现-out-of-memory-修改超过2048导致打不开解决办法"><a href="#IntelliJ-IDEA-弹窗出现-out-of-memory-修改超过2048导致打不开解决办法" class="headerlink" title="IntelliJ IDEA 弹窗出现 out of memory 修改超过2048导致打不开解决办法"></a>IntelliJ IDEA 弹窗出现 out of memory 修改超过2048导致打不开解决办法</h3><ul>
+<li><p>今天弹窗提示out of memory 然后一激动怼了个6144然后关闭之后idea就打不开了，到安装目录下直接运行idea的时候提示Invalid ReservedCodeCacheSize&#x3D;6144M. Must be at most 2048M.</p>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">idea</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/编译器//" class="article-tag-list-link color4">编译器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/12/13/idea/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-yilia" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2019/12/03/yilia/" target="_blank">hexo使用yilia主题</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/12/03/yilia/" class="archive-article-date">
+        <time datetime="2019-12-03T09:56:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-03</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="hexo使用yilia-plus-yilia-主题时点击所有文章、友链、关于我等-弹出空白网页解决办法"><a href="#hexo使用yilia-plus-yilia-主题时点击所有文章、友链、关于我等-弹出空白网页解决办法" class="headerlink" title="hexo使用yilia-plus(yilia)主题时点击所有文章、友链、关于我等,弹出空白网页解决办法"></a>hexo使用yilia-plus(yilia)主题时点击所有文章、友链、关于我等,弹出空白网页解决办法</h3><ul>
+<li>修改themes&#x2F;yilia&#x2F;layout&#x2F;_partial&#x2F;left-col.ejs文件内容找到header-smart-menu属性 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a q-on=&quot;click: openSlider(e, &#x27;&lt;%-i%&gt;&#x27;)&quot; &gt;&lt;%= theme.smart_menu[i] %&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
         		</li>
       		
 		</ul>
@@ -423,7 +1185,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2019/11/12/next-email/">展开全文 >></a>
+      <a class="article-more-a" href="/2019/12/03/yilia/">展开全文 >></a>
     </p>
     
 
@@ -455,7 +1217,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 
