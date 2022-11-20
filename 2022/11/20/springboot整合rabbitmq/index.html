@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1、依赖1234&lt;dependency&gt;		&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;spring-boot-starter-amqp&lt;&#x2F;artifactId&gt;	&lt;&#x2F;dependency&gt;  2、rabbitmq链接配置123456789101112131">
+  <meta name="description" content="1、依赖1234&lt;dependency&gt;		&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;spring-boot-starter-amqp&lt;&#x2F;artifactId&gt;	&lt;&#x2F;dependency&gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="springboot整合rabbitmq">
 <meta property="og:url" content="http://wandaren.github.io/2022/11/20/springboot%E6%95%B4%E5%90%88rabbitmq/index.html">
 <meta property="og:site_name" content="万大人的随笔">
-<meta property="og:description" content="1、依赖1234&lt;dependency&gt;		&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;spring-boot-starter-amqp&lt;&#x2F;artifactId&gt;	&lt;&#x2F;dependency&gt;  2、rabbitmq链接配置123456789101112131">
+<meta property="og:description" content="1、依赖1234&lt;dependency&gt;		&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;spring-boot-starter-amqp&lt;&#x2F;artifactId&gt;	&lt;&#x2F;dependency&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-20T09:05:42.000Z">
-<meta property="article:modified_time" content="2022-11-20T09:07:57.663Z">
+<meta property="article:modified_time" content="2022-11-20T09:17:06.280Z">
 <meta property="article:author" content="wandaren">
 <meta property="article:tag" content="springboot">
 <meta name="twitter:card" content="summary">
@@ -298,6 +298,8 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h1 id="1、依赖"><a href="#1、依赖" class="headerlink" title="1、依赖"></a>1、依赖</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-amqp<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
 
 <h1 id="2、rabbitmq链接配置"><a href="#2、rabbitmq链接配置" class="headerlink" title="2、rabbitmq链接配置"></a>2、rabbitmq链接配置</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">rabbitmq:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></span><br><span class="line">    <span class="attr">port:</span> <span class="number">5672</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">wq</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">qifeng</span></span><br><span class="line">    <span class="attr">virtual-host:</span> <span class="string">/</span></span><br><span class="line">    <span class="comment">#开启ack</span></span><br><span class="line">    <span class="attr">listener:</span></span><br><span class="line">      <span class="attr">direct:</span></span><br><span class="line">        <span class="attr">acknowledge-mode:</span> <span class="string">manual</span></span><br><span class="line">        <span class="attr">prefetch:</span> <span class="number">1</span> <span class="comment"># 限制一次拉取消息的数量</span></span><br><span class="line">      <span class="attr">simple:</span></span><br><span class="line">        <span class="attr">acknowledge-mode:</span> <span class="string">manual</span> <span class="comment">#采取手动应答</span></span><br><span class="line">        <span class="comment">#concurrency: 1 # 指定最小的消费者数量</span></span><br><span class="line">        <span class="comment">#max-concurrency: 1 #指定最大的消费者数量</span></span><br><span class="line">        <span class="attr">retry:</span></span><br><span class="line">          <span class="attr">enabled:</span> <span class="literal">true</span> <span class="comment"># 是否支持重试</span></span><br></pre></td></tr></table></figure>
 
