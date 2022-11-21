@@ -17,13 +17,13 @@
 <meta property="og:site_name" content="万大人的随笔">
 <meta property="og:description" content="class字节码文件结构   类型 名称 说明 长度 数量    u4 magic 魔数,识别Class文件格式 4个字节 1   u2 minor_version 副版本号(小版本) 2个字节 1   u2 major_version 主版本号(大版本) 2个字节 1   u2 constant_pool_count 常量池计数器 2个字节 1   cp_info constant_pool 常">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/8364180/1668833733358-a965c19e-21a0-4192-9ba3-6c263f916674.png#averageHue=%23a6de9e&clientId=u890571f5-b651-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uac11d854&margin=%5Bobject%20Object%5D&name=1598773300484.png&originHeight=687&originWidth=1289&originalType=binary&ratio=1&rotation=0&showTitle=false&size=142215&status=done&style=none&taskId=u8465b926-e8ea-4c66-a88c-2cc2f2bf1dc&title=">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/8364180/1668833738546-e116949b-fd7f-48f4-b4f1-23c35ecb2e9f.png#averageHue=%23aadfa2&clientId=u890571f5-b651-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u6293565a&margin=%5Bobject%20Object%5D&name=1598773308492.png&originHeight=685&originWidth=1290&originalType=binary&ratio=1&rotation=0&showTitle=false&size=139737&status=done&style=none&taskId=u074aa3a3-fcbc-469c-85e4-120a4d38e48&title=">
+<meta property="og:image" content="https://preview.cloud.189.cn/image/imageAction?param=340928CAD7322067D84B19E12603224B62121DECE98F06E20765AC0A087C7A589BD679A036380979F055B09AB888C7C98BE87CFEEDC4EDBB0C98A917F9284F2824344B69D7F8D99AA7B131FE77E9152EB34BB5BE8E8D28D42BF61D21C17F101304AB509BD59D245C0A0D8C449189B20C">
+<meta property="og:image" content="https://preview.cloud.189.cn/image/imageAction?param=9B532F38FC7ED3FC39F7F08CFBDCBADF77A59ECB1B52EE1420D5DA83CC4326DD5AC709AD83A015508BD546B6C342CA19B6D0D434B81E276022B60558531F74FEF28E59BFB21EF8C7760B4E2C1EE5BD97C78017031619D20C64ABF078B648B62B57AFD6C652B848DAC64E5A09D90286A4">
 <meta property="article:published_time" content="2022-11-20T09:21:21.000Z">
-<meta property="article:modified_time" content="2022-11-20T09:29:16.478Z">
+<meta property="article:modified_time" content="2022-11-21T03:13:16.840Z">
 <meta property="article:author" content="wandaren">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2022/png/8364180/1668833733358-a965c19e-21a0-4192-9ba3-6c263f916674.png#averageHue=%23a6de9e&clientId=u890571f5-b651-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uac11d854&margin=%5Bobject%20Object%5D&name=1598773300484.png&originHeight=687&originWidth=1289&originalType=binary&ratio=1&rotation=0&showTitle=false&size=142215&status=done&style=none&taskId=u8465b926-e8ea-4c66-a88c-2cc2f2bf1dc&title=">
+<meta name="twitter:image" content="https://preview.cloud.189.cn/image/imageAction?param=340928CAD7322067D84B19E12603224B62121DECE98F06E20765AC0A087C7A589BD679A036380979F055B09AB888C7C98BE87CFEEDC4EDBB0C98A917F9284F2824344B69D7F8D99AA7B131FE77E9152EB34BB5BE8E8D28D42BF61D21C17F101304AB509BD59D245C0A0D8C449189B20C">
   
     <link rel="alternative" href="/atom.xml" title="万大人的随笔" type="application/atom+xml">
   
@@ -640,7 +640,7 @@
 <td>表示一个动态方法调用点</td>
 </tr>
 </tbody></table>
-<h2 id="常量类型和结构细节"><a href="#常量类型和结构细节" class="headerlink" title="常量类型和结构细节"></a>常量类型和结构细节</h2><p><img src="https://cdn.nlark.com/yuque/0/2022/png/8364180/1668833733358-a965c19e-21a0-4192-9ba3-6c263f916674.png#averageHue=%23a6de9e&clientId=u890571f5-b651-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uac11d854&margin=%5Bobject%20Object%5D&name=1598773300484.png&originHeight=687&originWidth=1289&originalType=binary&ratio=1&rotation=0&showTitle=false&size=142215&status=done&style=none&taskId=u8465b926-e8ea-4c66-a88c-2cc2f2bf1dc&title=" alt="1598773300484.png"><br><img src="https://cdn.nlark.com/yuque/0/2022/png/8364180/1668833738546-e116949b-fd7f-48f4-b4f1-23c35ecb2e9f.png#averageHue=%23aadfa2&clientId=u890571f5-b651-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u6293565a&margin=%5Bobject%20Object%5D&name=1598773308492.png&originHeight=685&originWidth=1290&originalType=binary&ratio=1&rotation=0&showTitle=false&size=139737&status=done&style=none&taskId=u074aa3a3-fcbc-469c-85e4-120a4d38e48&title=" alt="1598773308492.png"></p>
+<h2 id="常量类型和结构细节"><a href="#常量类型和结构细节" class="headerlink" title="常量类型和结构细节"></a>常量类型和结构细节</h2><p><img src="https://preview.cloud.189.cn/image/imageAction?param=340928CAD7322067D84B19E12603224B62121DECE98F06E20765AC0A087C7A589BD679A036380979F055B09AB888C7C98BE87CFEEDC4EDBB0C98A917F9284F2824344B69D7F8D99AA7B131FE77E9152EB34BB5BE8E8D28D42BF61D21C17F101304AB509BD59D245C0A0D8C449189B20C" alt="1598773300484.png"><br><img src="https://preview.cloud.189.cn/image/imageAction?param=9B532F38FC7ED3FC39F7F08CFBDCBADF77A59ECB1B52EE1420D5DA83CC4326DD5AC709AD83A015508BD546B6C342CA19B6D0D434B81E276022B60558531F74FEF28E59BFB21EF8C7760B4E2C1EE5BD97C78017031619D20C64ABF078B648B62B57AFD6C652B848DAC64E5A09D90286A4" alt="1598773308492.png"></p>
 <h2 id="访问标志"><a href="#访问标志" class="headerlink" title="访问标志"></a>访问标志</h2><table>
 <thead>
 <tr>
